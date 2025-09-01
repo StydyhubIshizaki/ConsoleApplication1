@@ -1,8 +1,14 @@
 ﻿#include <iostream>
+#include <string>
 
 int main()
 {
-    std::cout << "Hello World!" << std::endl;
-    std::cout << 100 << std::endl;
-    std::cout << 123.456 << std::endl;
+    double x{};
+    double y{};
+
+    std::cin >> x;
+    std::cin >> y;
+
+	double z = x + y;
+    std::cout << z;
 }
