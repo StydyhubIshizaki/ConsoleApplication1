@@ -30,10 +30,18 @@ int sample(int* a)
 	return *a;
 }
 
+int sample2(int& a)
+{
+	print(a);
+	a = a + 20;
+	return a;
+}
+
 int main()
 {
 	int x = 10;
-	int z = sample(&x);
+	//int z = sample(&x);
+	int z = sample2(x);
 	print(z);
 	print(x);
 }
