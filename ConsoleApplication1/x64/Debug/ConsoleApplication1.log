@@ -1,2 +1,5 @@
 ﻿  ConsoleApplication1.cpp
-  ConsoleApplication1.vcxproj -> C:\Users\labor\dev\ConsoleApplication1\x64\Debug\ConsoleApplication1.exe
+C:\Users\labor\dev\work-repo\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(71,39): warning C4244: '=': 'double' から 'int' への変換です。データが失われる可能性があります。
+C:\Users\labor\dev\work-repo\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(75,39): warning C4244: '=': 'double' から 'int' への変換です。データが失われる可能性があります。
+C:\Users\labor\dev\work-repo\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(79,39): warning C4244: '=': 'double' から 'int' への変換です。データが失われる可能性があります。
+  ConsoleApplication1.vcxproj -> C:\Users\labor\dev\work-repo\ConsoleApplication1\x64\Debug\ConsoleApplication1.exe
