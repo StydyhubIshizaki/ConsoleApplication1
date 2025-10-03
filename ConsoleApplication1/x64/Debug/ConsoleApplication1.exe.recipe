@@ -2,11 +2,7 @@
 <Project>
   <ProjectOutputs>
     <ProjectOutput>
-<<<<<<< HEAD
-      <FullPath>C:\Users\labor\dev\work-repo\ConsoleApplication1\x64\Debug\ConsoleApplication1.exe</FullPath>
-=======
       <FullPath>C:\Users\ni-sh\source\repos\ConsoleApplication1\x64\Debug\ConsoleApplication1.exe</FullPath>
->>>>>>> 1846e48a33bf987d09924ad50945d3fddc1a99f6
     </ProjectOutput>
   </ProjectOutputs>
   <ContentFiles />

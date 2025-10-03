@@ -46,6 +46,25 @@ int sample2(int& a)
 //	print(x);
 //}
 
+
+// runnningのカロリーを計算する
+int running(int* weight, int* time)
+{
+	return 9 * *weight * *time * 1.05 / 60;
+}
+
+// walkingのカロリーを計算する
+int walking(int* weight, int* time)
+{
+	return 3 * *weight * *time * 1.05 / 60;
+}
+
+// cyclingのカロリーを計算する
+int cycling(int* weight, int* time)
+{
+	return 5 * *weight * *time * 1.05 / 60;
+}
+
 int main()
 {
 	std::string type;
@@ -54,8 +73,15 @@ int main()
 	int calories = 0;
 
 	// 運動タイプを入力してもらう
-	std::cout << "運動タイプを入力してください（runnning / walking / cycling）" << std::endl;
-	std::cin >> type;
+	for (int i = 0; i < 10; i++)
+	{
+		std::cout << "運動タイプを入力してください（runnning / walking / cycling）" << std::endl;
+		std::cin >> type;
+		if (type == "running" || type == "walking" || type == "cycling")
+		{
+			break;
+		}
+	}
 
 	// 体重を入力してもらう
 	std::cout << "体重を入力してください" << std::endl;
@@ -68,19 +94,15 @@ int main()
 	// 運動タイプを判定する
 	if (type == "running")
 	{
-		calories = 9 * weight * time * 1.05 / 60;
+		calories = running(&weight, &time);
 	}
 	else if (type == "walking")
 	{
-		calories = 3 * weight * time * 1.05 / 60;
+		calories = walking(&weight, &time);
 	}
 	else if (type == "cycling")
 	{
-		calories = 5 * weight * time * 1.05 / 60;
-	}
-	else
-	{
-		std::cout << "運動タイプを入力してください（runnning / walking / cycling）";
+		calories = cycling(&weight, &time);
 	}
 
 	std::cout << "消費カロリーは" << calories << "です。" << std::endl;
