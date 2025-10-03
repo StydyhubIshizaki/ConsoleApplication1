@@ -83,5 +83,5 @@ int main()
 		std::cout << "運動タイプを入力してください（runnning / walking / cycling）";
 	}
 
-	std::cout << "消費カロリーは" + calories + "です。";
+	std::cout << "消費カロリーは" << calories << "です。" << std::endl;
 }
